@@ -111,6 +111,40 @@ canvas {
     transform: translate(-50%, -50%);
   }
 }
+
+/* 添加媒体查询，针对移动设备调整字体大小 */
+@media (max-width: 768px) {
+  .love-text {
+    font-size: 5vw; /* 在手机上显示更大的字体 */
+    text-shadow: 0 0 8px #ff4d8d, 0 0 15px #ff4d8d, 0 0 25px #ff4d8d;
+    margin-top: -8vh; /* 在手机上调整垂直位置 */
+    letter-spacing: 0.2vw; /* 增加字间距 */
+  }
+}
+
+/* 针对中等大小的手机屏幕 */
+@media (max-width: 576px) {
+  .love-text {
+    font-size: 6vw;
+    margin-top: -9vh;
+  }
+}
+
+/* 针对非常小的屏幕 */
+@media (max-width: 480px) {
+  .love-text {
+    font-size: 7vw; /* 在更小的手机上显示更大的字体 */
+    margin-top: -10vh; /* 进一步调整位置 */
+  }
+}
+
+/* 针对超小屏幕设备 */
+@media (max-width: 360px) {
+  .love-text {
+    font-size: 8vw;
+    margin-top: -12vh;
+  }
+}
   </style>
  </HEAD>
  
