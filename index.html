@@ -117,7 +117,7 @@ canvas {
   .love-text {
     font-size: 5vw; /* 在手机上显示更大的字体 */
     text-shadow: 0 0 8px #ff4d8d, 0 0 15px #ff4d8d, 0 0 25px #ff4d8d;
-    margin-top: -8vh; /* 在手机上调整垂直位置 */
+    margin-top: -1vh; /* 调整垂直位置，让文字更靠近中心 */
     letter-spacing: 0.2vw; /* 增加字间距 */
   }
 }
@@ -126,7 +126,7 @@ canvas {
 @media (max-width: 576px) {
   .love-text {
     font-size: 6vw;
-    margin-top: -9vh;
+    margin-top: 0; /* 不再向上偏移 */
   }
 }
 
@@ -134,7 +134,7 @@ canvas {
 @media (max-width: 480px) {
   .love-text {
     font-size: 7vw; /* 在更小的手机上显示更大的字体 */
-    margin-top: -10vh; /* 进一步调整位置 */
+    margin-top: 1vh; /* 轻微向下偏移 */
   }
 }
 
@@ -142,7 +142,7 @@ canvas {
 @media (max-width: 360px) {
   .love-text {
     font-size: 8vw;
-    margin-top: -12vh;
+    margin-top: 2vh; /* 向下偏移更多 */
   }
 }
   </style>
