@@ -26,14 +26,16 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 2.8vw;
+  font-size: 2.5vw;
   font-weight: bold;
-  text-shadow: 0 0 10px #ea80b0, 0 0 20px #ea80b0;
-  z-index: 100;
+  text-shadow: 0 0 10px #ff4d8d, 0 0 20px #ff4d8d, 0 0 30px #ff4d8d;
+  z-index: 1000;
   font-family: "Microsoft YaHei", sans-serif;
-  animation: floating 3s ease-in-out infinite;
+  animation: floating 2s ease-in-out infinite;
   letter-spacing: 0.1vw;
   white-space: nowrap;
+  pointer-events: none;
+  margin-top: -5vh;
 }
 
 .love-text span {
@@ -86,7 +88,7 @@ canvas {
 @keyframes colorChange {
   0% {
     color: #fff;
-    text-shadow: 0 0 10px #ea80b0, 0 0 20px #ea80b0;
+    text-shadow: 0 0 10px #ff4d8d, 0 0 20px #ff4d8d, 0 0 30px #ff4d8d;
   }
   50% {
     color: #ffccdd;
@@ -94,7 +96,7 @@ canvas {
   }
   100% {
     color: #fff;
-    text-shadow: 0 0 10px #ea80b0, 0 0 20px #ea80b0;
+    text-shadow: 0 0 10px #ff4d8d, 0 0 20px #ff4d8d, 0 0 30px #ff4d8d;
   }
 }
 
@@ -103,7 +105,7 @@ canvas {
     transform: translate(-50%, -50%);
   }
   50% {
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -52%);
   }
   100% {
     transform: translate(-50%, -50%);
@@ -113,6 +115,8 @@ canvas {
  </HEAD>
  
  <BODY>
+    <canvas id="c"></canvas>
+    <canvas id="pinkboard"></canvas>
     <div class="love-text">
         <span>我</span>
         <span>爱</span>
@@ -121,7 +125,6 @@ canvas {
         <span>紫</span>
         <span>薇</span>
     </div>
-	 <canvas id="c"></canvas>
 	 		<script>
 	 			var c=document.getElementById("c");
 	 			var	ctx=c.getContext("2d");
@@ -154,7 +157,6 @@ canvas {
 	 		}
 	 		setInterval(drap,50);
 	 		</script>
-  <canvas id="pinkboard"></canvas>
   <script>
   /*
  * Settings
